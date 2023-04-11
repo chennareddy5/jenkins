@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('ONE') {
+            steps {
+                echo 'Hi, wellcome to pipeline...'
+            }
+        }
+        stage('Two'){
+        steps {
+          echo('Sample testing of Stage 2')
+       }
+       }
+       stage('Three'){
+       steps {
+          echo 'Thanks for using Jenkins Pipeline'
+       }
+       }
+    }
+}
